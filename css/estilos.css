@@ -1,0 +1,160 @@
+*{
+    margin: 0%;
+    padding: 0;
+}
+/* ESTILO PARA EL SITIO WEB*/
+body{
+    background: #090159;
+    font-family: verdana;
+}
+/*ESTILO PARA EL ENCABEZADO*/
+.superior{
+    background: #3a3d47;
+    overflow: hidden;
+}
+
+.logo{
+    float: left;
+    width: 300px;
+    padding: 20px;
+}
+.container{
+    width: 1200px;
+    margin: 10px auto;
+    background: white;
+}
+
+
+/*ESTILO PARA EL MENU*/
+.menu{
+    float: left;
+    padding: 40px;
+    font-size: 20px;
+}
+
+.opciones li{
+    float: left;
+    list-style: none;
+}
+
+.opciones li a{
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    border: 1px solid white;
+}
+
+.opciones li a:hover{
+    background: #090159;
+}
+
+/* ESTILOS PARA LOS PRODUCTOS Y SERVICIOS*/
+.cuerpo{
+    overflow: hidden;
+}
+
+.titulo{
+    text-align: center;
+    padding: 20px 0 15px 0;
+    color: black;
+    font-size: 35px;
+}
+.caja{
+    float: left;
+    width: 380px;
+    margin: 8px; 
+    border: 3px solido;
+    
+}
+
+.subtitulo{
+    background: #3a3d47;
+}
+
+.corriente{
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.efecto:hover{
+    cursor: pointer;
+    opacity: 0.5;/* VALOR ES DE 0.0 A 1.0*/
+}
+
+.contenido{
+    color: black;
+    text-align: justify;
+    padding: 20px;
+}
+
+.boton{
+    color: white;
+    background: #090159;
+    cursor: pointer;
+    padding: 15px 20px;
+    margin: 15px 0;
+}
+
+.boton:hover{
+    background:#1f0edf;
+}
+
+/* ESTILOS PARA EL PIE DE PAGINA */
+.pie_pagina{
+    overflow: hidden;
+    background-color: rgb(233, 231, 231);
+    
+}
+.izquierda{
+    float: left;
+    width: 500px;
+    padding: 20px;
+}
+
+.derecha{
+    float: left;
+    width: 550px;
+    padding: 20px;
+}
+
+.siguenos{
+    color:#ff7600;
+    text-align: center;
+    padding: 5px 0;
+}
+
+/* ESPACIO DE SLIDER CON TRANSICIONES*/
+.slider{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 300%;
+    animation: cambio 12s infinite alternate;
+}
+.slider li{
+    width: 100%;
+    list-style: none;
+}      
+
+.slider img{
+    width: 100%;
+}
+
+@keyframes cambio{ /* cambio: identificaro*/
+    0% {margin-left: 0;}
+    30%{margin-left: 0;}
+
+    35%{margin-left: -100%;}
+    65%{margin-left: -100%;}
+
+    70%{margin-left: -200%;}
+    100%{margin-left: -200%;}
+
+    
+}
